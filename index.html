@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mean.css">
+    <link rel="stylesheet" href="collapsible.css">
+    <script src="collapsible.js"></script>
+    <title>Константин Кирсанов</title>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="header">
+        <div class="logo">
+            <a href="https://lms.skillfactory.ru"><img src="img/skillfactorylogo.png" alt="skillfactory logo"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li ><a class="activ" href="index.html">Галавная</a></li>
+                <li><a href="biography.html">Биография</a></li>
+                <li><a href="skills.html">Навыки</a></li>
+            </ul>
+
+        </div>
+        
+
+    </div>
+    <div class="content-wrapper">
+        <div class="content-mean">
+            <h1>Резюме</h1>
+            <h3>Здравствуйте, меня зовут Кэст!</h3>
+            <button type="button" class="collapsible">Подробнее ..</button>
+            <div class="content">
+            <p> Мне 33 года, в данный момент живу в городе Раменское Московской области. Работаю в Digital агенстве Cherry Media.</p>
+            </div>
+        </div>
+        <div class="imges">
+            <img src="img/foto.jpg" alt="Фотография">
+            <ul style="padding-left: 0px;">
+                <li><span class="bolt-text">Имя</span>Константин</li>
+                <hr>
+                <li><span class="bolt-text">Фамилия</span>Кирсанов</li>
+                <hr>
+                <li><span class="bolt-text">Возраст</span>33</li>
+                <hr>
+                <li><span class="bolt-text">Образование</span>Высшее</li>
+                <hr>
+                <li><span class="bolt-text">Направление</span>Fullstack разработчик на Python</li>
+                <hr>
+
+                
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="contentt">
+                
+                <a href="https://vk.com/i_belong_to_kira"><img src="img/VK.png" alt="VK"></a>
+                
+            </div>
+        </div>
+       
+    </footer>
+    <div class="mail">
+        <a href="mailto:toshnotik666@mail.ru"><img src="img/mail.jpg" alt=""></a>
+    </div> 
+   </div>
+
+       <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+    
+</body>
+
+
+</html>
